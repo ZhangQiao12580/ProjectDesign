@@ -1,0 +1,19 @@
+shipTo----US
+----name: Alice Smith
+----street: 123 Maple Street
+----city:Mill Valley
+----state:CA
+----zip:90952
+billTo----US
+----name:Robert Smith
+----street:8 Oak Avenue 
+----city:Old Town 
+----state:PA
+----zip:95819
+comment:Hurry, my lawn is going wild!
+items
+----item----872-AA
+--------productName:Lawnmower
+--------quantity:1
+--------USPrice:148.95
+--------comment:Confirm this is electric

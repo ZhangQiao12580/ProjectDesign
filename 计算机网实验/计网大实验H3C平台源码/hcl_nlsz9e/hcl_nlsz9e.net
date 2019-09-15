@@ -1,0 +1,197 @@
+autostart = False
+version = 2.1.1
+[vbox 127.0.0.1:16600]
+    workingdir = None
+    udp = 16000
+    [[MSR36-20 MSR36-20_18]]
+        image = .
+        device_id = 18
+        bridge_mac = aa-cd-47-5a-12-00
+        slot0 = MSR36 512
+        GE_0/0 = MSR36-20_20 GE_0/2
+        GE_0/1 = S5820V2-54QS-GE_1 GE_0/1
+        x = -37.0
+        y = -237.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_1]]
+        image = .
+        device_id = 1
+        bridge_mac = aa-ca-5f-aa-01-00
+        slot0 = S5800 512
+        GE_0/1 = MSR36-20_18 GE_0/1
+        GE_0/2 = S5820V2-54QS-GE_4 GE_0/1
+        GE_0/3 = S5820V2-54QS-GE_7 GE_0/1
+        GE_0/4 = MSR36-20_19 GE_0/2
+        x = -146.0
+        y = -119.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_19]]
+        image = .
+        device_id = 19
+        bridge_mac = aa-cd-51-4b-13-00
+        slot0 = MSR36 512
+        GE_0/0 = MSR36-20_20 GE_0/1
+        GE_0/2 = S5820V2-54QS-GE_1 GE_0/4
+        x = -251.0
+        y = -241.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_2]]
+        image = .
+        device_id = 2
+        bridge_mac = aa-f6-71-54-02-00
+        slot0 = S5800 512
+        GE_0/1 = S5820V2-54QS-GE_4 GE_0/2
+        GE_0/2 = PC_8 GE_0/1
+        GE_0/3 = PC_9 GE_0/1
+        x = -472.0
+        y = 172.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_5]]
+        image = .
+        device_id = 5
+        bridge_mac = aa-cb-70-34-05-00
+        slot0 = S5800 512
+        GE_0/1 = S5820V2-54QS-GE_4 GE_0/3
+        GE_0/2 = PC_10 GE_0/1
+        GE_0/3 = PC_11 GE_0/1
+        x = -273.0
+        y = 173.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_4]]
+        image = .
+        device_id = 4
+        bridge_mac = aa-ca-ba-c7-04-00
+        slot0 = S5800 512
+        GE_0/1 = S5820V2-54QS-GE_1 GE_0/2
+        GE_0/2 = S5820V2-54QS-GE_2 GE_0/1
+        GE_0/3 = S5820V2-54QS-GE_5 GE_0/1
+        x = -362.0
+        y = 33.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_7]]
+        image = .
+        device_id = 7
+        bridge_mac = aa-cb-78-50-07-00
+        slot0 = S5800 512
+        GE_0/1 = S5820V2-54QS-GE_1 GE_0/3
+        GE_0/2 = S5820V2-54QS-GE_6 GE_0/1
+        x = 45.0
+        y = 32.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_6]]
+        image = .
+        device_id = 6
+        bridge_mac = aa-cb-73-ae-06-00
+        slot0 = S5800 512
+        GE_0/1 = S5820V2-54QS-GE_7 GE_0/2
+        GE_0/2 = PC_12 GE_0/1
+        GE_0/3 = PC_13 GE_0/1
+        x = -86.0
+        y = 175.0
+        z = 5.0
+    [[PC PC_8]]
+        image = .
+        device_id = 8
+        bridge_mac = aa-d0-11-6a-08-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_2 GE_0/2
+        symbol = PC
+        x = -533.0
+        y = 344.0
+        z = 5.0
+    [[PC PC_11]]
+        image = .
+        device_id = 11
+        bridge_mac = aa-d0-2a-4b-0b-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_5 GE_0/3
+        symbol = PC
+        x = -219.0
+        y = 345.0
+        z = 5.0
+    [[PC PC_14]]
+        image = .
+        device_id = 14
+        bridge_mac = aa-d0-41-a5-0e-00
+        slot0 = PC 250
+        symbol = PC
+        x = 157.0
+        y = 348.0
+        z = 5.0
+    [[PC PC_15]]
+        image = .
+        device_id = 15
+        bridge_mac = aa-d0-46-c4-0f-00
+        slot0 = PC 250
+        symbol = PC
+        x = 242.0
+        y = 347.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_20]]
+        image = .
+        device_id = 20
+        bridge_mac = aa-cd-87-59-14-00
+        slot0 = MSR36 512
+        GE_0/0 = NIC:VirtualBox Host-Only Ethernet Adapter
+        GE_0/1 = MSR36-20_19 GE_0/0
+        GE_0/2 = MSR36-20_18 GE_0/0
+        x = -142.0
+        y = -362.0
+        z = 5.0
+    [[PC PC_9]]
+        image = .
+        device_id = 9
+        bridge_mac = aa-d0-1e-85-09-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_2 GE_0/3
+        symbol = PC
+        x = -437.0
+        y = 345.0
+        z = 5.0
+    [[PC PC_10]]
+        image = .
+        device_id = 10
+        bridge_mac = aa-d0-23-96-0a-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_5 GE_0/2
+        symbol = PC
+        x = -319.0
+        y = 343.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_3]]
+        image = .
+        device_id = 3
+        bridge_mac = aa-cb-68-47-03-00
+        slot0 = S5800 512
+        x = 194.0
+        y = 175.0
+        z = 5.0
+    [[PC PC_12]]
+        image = .
+        device_id = 12
+        bridge_mac = aa-d0-31-4e-0c-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_6 GE_0/2
+        symbol = PC
+        x = -127.0
+        y = 348.0
+        z = 5.0
+    [[PC PC_13]]
+        image = .
+        device_id = 13
+        bridge_mac = aa-d0-35-e1-0d-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_6 GE_0/3
+        symbol = PC
+        x = -37.0
+        y = 349.0
+        z = 5.0
+[GNS3-DATA]
+    m11 = 1.0
+    m22 = 1.0
+    [[Cloud Host_1]]
+        symbol = Host
+        x = -143.0
+        y = -487.0
+        z = 5.0
+        NIC:VirtualBox Host-Only Ethernet Adapter_0 = MSR36-20_20 GE_0/0

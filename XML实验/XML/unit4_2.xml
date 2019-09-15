@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRODUCTDATA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///E:/XML1240/XML%e5%ae%9e%e9%aa%8c/unit4_2.xsd">
+	<PRODUCT PRODID="P001" CATEGORY="book">
+		<PRODUCTNAME>DIOR</PRODUCTNAME>
+		<DESCRIPTION>GIRLS LOVE IT</DESCRIPTION>
+		<PRICE>999</PRICE>
+		<QUANTITY>1000</QUANTITY>
+	</PRODUCT>
+</PRODUCTDATA>

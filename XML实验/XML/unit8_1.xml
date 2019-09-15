@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="unit7_xsl.xsl" ?>
+<links xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="none">
+	<link xlink:type="simple" xlink:href="http://www.baidu.com" xlink:show="replace" xlink:actuate="onRequest">
+		<name>百度一下，你就知道</name>
+	</link>
+</links>

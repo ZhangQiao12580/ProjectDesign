@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="unit5_1xsl3.xsl" ?>
+<Orders>
+	<Order orderId="A001" orderDate="2009-01-20">
+		<name>玩具</name>
+		<number>10</number>
+		<city>北京</city>
+		<zip>10000</zip>
+	</Order>
+	<Order orderId="A002" orderDate="2009-03-20">
+		<name>文具</name>
+		<number>5</number>
+		<city>青岛</city>
+		<zip>26000</zip>
+	</Order>
+</Orders>

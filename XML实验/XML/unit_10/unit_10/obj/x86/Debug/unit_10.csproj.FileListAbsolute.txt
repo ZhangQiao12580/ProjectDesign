@@ -1,0 +1,4 @@
+E:\XML1240\XML实验\unit_10\unit_10\bin\Debug\unit_10.exe
+E:\XML1240\XML实验\unit_10\unit_10\bin\Debug\unit_10.pdb
+E:\XML1240\XML实验\unit_10\unit_10\obj\x86\Debug\unit_10.exe
+E:\XML1240\XML实验\unit_10\unit_10\obj\x86\Debug\unit_10.pdb

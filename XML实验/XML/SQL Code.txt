@@ -1,0 +1,36 @@
+create table student
+(
+	id int primary key,
+	name char(12),
+	sex char(6),
+	age int
+)
+
+drop table student
+
+
+insert into student values (1,'ZhangLei','Male',21)
+insert into student values (2,'SBGaoyi','Male',20)
+insert into student values (3,'TianSha','Female',21)
+insert into student values (4,'LaoSiji','Male',20)
+
+select * from student
+
+select * from student for xml RAW
+
+select * from student for xml AUTO
+
+select * from student for xml PATH
+
+call sp_xml_removedocument
+
+use school select * from student
+
+use school
+declare @doc varchar(1000)
+declare @idoc int
+set @doc='<ROOT><student id="5" name="cathy" sex="female" age="21"></student></ROOT>'
+exec sp_xml_preparedocument @idoc output,@doc
+	select * from openxml(@idoc,'/ROOT/student',1)
+	with(id int ,name varchar(12),sex varchar(6),age int) insert student
+	select * from openxml(@idoc,'/ROOT/student') with student exec sp_xml_removedocument @doc

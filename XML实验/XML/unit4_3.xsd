@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="PURCHAHEORDER" type="order"/>
+		
+	<xs:complexType name="order">
+	
+		<xs:sequence>
+			<xs:element minOccurs="1" maxOccurs="unbounded" name="ORDER" type="orderdetail"/>
+		</xs:sequence>	
+
+		<xs:attribute name="PRODID" type="xs:string"/>
+		<xs:attribute use="required" name="ORDERID" type="xs:string"/>	
+		
+	</xs:complexType>
+	
+	<xs:complexType name="orderdetail">
+	
+		<xs:sequence>
+			<xs:element name="DATA" type="xs:date"/>
+			<xs:element name="PRODUCTNAME" type="xs:string"/>
+			<xs:element name="SUPPLIERNAME" type="xs:string"/>
+			<xs:element name="ADDRESS" type="xs:string"/>
+			<xs:element name="QUANTITY" type="xs:integer"/>
+			<xs:element name="PRICEPERQTY" type="xs:integer"/>
+		</xs:sequence>
+	
+	</xs:complexType>
+</xs:schema>

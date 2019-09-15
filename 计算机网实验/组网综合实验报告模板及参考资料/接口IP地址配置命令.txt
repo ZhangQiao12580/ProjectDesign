@@ -1,0 +1,6 @@
+[H3C]vlan 2
+[H3C-vlan2]port GigabitEthernet 1/0/3
+[H3C]interface Vlan-interface 2
+[H3C-Vlan-interface2]ip 10.2.0.1 24
+[H3C]interface Vlan-interface 1
+[H3C-Vlan-interface1]ip 10.1.0.1 24

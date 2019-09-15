@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PURCHAHEORDER ORDERID="A001" PRODID="P002" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///E:/XML1240/XML%e5%ae%9e%e9%aa%8c/unit4_3.xsd">
+	<ORDER>
+		<DATA>2016-02-15</DATA>
+		<PRODUCTNAME>GAOYI</PRODUCTNAME>
+		<SUPPLIERNAME>ZHANGLEI</SUPPLIERNAME>
+		<ADDRESS>HEDAXINQU</ADDRESS>
+		<QUANTITY>123</QUANTITY>
+		<PRICEPERQTY>245</PRICEPERQTY>
+	</ORDER>
+</PURCHAHEORDER>

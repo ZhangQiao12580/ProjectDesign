@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="PRODUCTDATA" type="product"/>
+	<xs:complexType name="product">
+		<xs:sequence>
+			<xs:element name="PRODUCT" minOccurs="1" maxOccurs="unbounded" type="productdetail"></xs:element>
+		</xs:sequence>
+	
+	</xs:complexType>
+	
+	<xs:complexType name="productdetail">
+		<xs:sequence>
+			<xs:element name="PRODUCTNAME" type="xs:string"/>
+			<xs:element name="DESCRIPTION" type="xs:string"/>
+			<xs:element name="PRICE">
+					<xs:simpleType>
+						<xs:restriction  base="xs:integer">
+						</xs:restriction>
+					</xs:simpleType>
+			</xs:element>
+			<xs:element name="QUANTITY">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer"></xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="PRODID" type="xs:string"/>
+		<xs:attribute name="CATEGORY">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="toy"/>
+					<xs:enumeration value="book"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,98 @@
+package demo;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.*;
+
+public class ParseXML {
+
+	public static void main(String[] args){
+		try {
+			DocumentBuilderFactory documentBuilderFactory=DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder=documentBuilderFactory.newDocumentBuilder();
+			Document document=builder.parse("unit9_1.xml");
+			Node root= document.getFirstChild();
+			NodeList fir=root.getChildNodes();
+			for(int i=0;i<fir.getLength();i++)
+			{
+					Node element=fir.item(i);
+					if(element.hasAttributes())
+					{
+						System.out.print(element.getNodeName());
+						System.out.println("----"+element.getAttributes().item(0).getTextContent());
+					}
+					else
+					{
+						if(!element.getNodeName().equals("#text"))
+						{
+							//System.out.println(element.getNodeName());
+							if(element.getChildNodes().getLength()>1)
+							{
+								System.out.println(element.getNodeName());
+							}
+							else
+							{
+								System.out.println(element.getNodeName()+":"+element.getTextContent());
+							}
+						}
+					}
+					NodeList sen=element.getChildNodes();
+					for(int j=0;j<sen.getLength();j++)
+					{
+						Node seelement=sen.item(j);
+						if(seelement.hasAttributes())
+						{
+							System.out.print("----"+seelement.getNodeName());
+							System.out.println("----"+seelement.getAttributes().item(0).getTextContent());
+						}
+						else
+						{
+							if(!seelement.getNodeName().equals("#text"))
+							{
+								if(seelement.hasChildNodes()==false)
+								{
+									System.out.println("----"+seelement.getNodeValue());
+								}
+								else
+								{
+									System.out.println("----"+seelement.getNodeName()+":"+seelement.getChildNodes().item(0).getTextContent());
+								}
+								
+							}
+						}
+						
+						NodeList th=seelement.getChildNodes();
+						for(int k=0;k<th.getLength();k++)
+						{
+							Node thelement=th.item(k);
+							if(thelement.hasAttributes())
+							{
+								System.out.print("----"+thelement.getNodeName());
+								System.out.println("----"+thelement.getAttributes().item(0).getTextContent());
+							}
+							else
+							{
+								if(!thelement.getNodeName().equals("#text"))
+								{
+									if(thelement.hasChildNodes()==false)
+									{
+										System.out.println("--------"+thelement.getNodeValue());
+									}
+									else
+									{
+										System.out.println("--------"+thelement.getNodeName()+":"+thelement.getChildNodes().item(0).getTextContent());
+									}
+									
+								}
+							}
+						}
+					}
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

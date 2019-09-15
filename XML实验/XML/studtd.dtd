@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT ENTER_NAME_OF_ROOT_ELEMENT_HERE EMPTY>
+<!ELEMENT 学生名册 (学生+)><!--声明子标签内容-->
+<!--+最少出现一次
+	*零次或多次
+	?零次或一次
+	不加默认只出现一次
+-->
+<!ELEMENT 学生 (姓名,性别,年龄)>
+<!ATTLIST 学生 学号 ID #REQUIRED>	<!--验证学生标签的学号属性是否合法，CDATA为为字符型属性，ID为唯一属性，设置默认值为A1。-->
+<!ELEMENT 姓名 (#PCDATA)><!--声明标签内容格式，#PCDATA被解析为字符型，且其内的字符会被实体编译器编译，#DCDATA不会被编译-->
+<!ELEMENT 性别 (#PCDATA)>
+<!ELEMENT 年龄 (#PCDATA)>
